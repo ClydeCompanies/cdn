@@ -4692,7 +4692,7 @@ tbody.collapse.in {
   }
   */
   .card-columns .card {
-    display: inline-block;
+    /*display: inline-block;*/
     width: 100%;
   }
 }
