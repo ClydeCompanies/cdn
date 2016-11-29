@@ -740,7 +740,7 @@ pre code {
   max-height: 340px;
   overflow-y: scroll;
 }
-
+/*
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -782,7 +782,7 @@ pre code {
   padding-left: 15px;
   padding-right: 15px;
 }
-
+*/
 .row {
   display: -webkit-box;
   display: -webkit-flex;
