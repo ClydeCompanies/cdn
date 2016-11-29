@@ -4380,7 +4380,7 @@ tbody.collapse.in {
     display: block !important;
   }
 }
-
+/*
 .card {
   position: relative;
   display: block;
@@ -4389,7 +4389,7 @@ tbody.collapse.in {
   border-radius: 0.25rem;
   border: 1px solid rgba(0, 0, 0, 0.125);
 }
-
+*/
 .card-block {
   padding: 1.25rem;
 }
