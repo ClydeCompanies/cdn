@@ -3509,10 +3509,10 @@ tbody.collapse.in {
 .input-group {
   position: relative;
   width: 100%;
-  display: -webkit-box;
+  /*display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex;
+  display: flex;*/
 }
 
 .input-group .form-control {
@@ -3541,7 +3541,7 @@ tbody.collapse.in {
   vertical-align: middle;
 }
 
-.input-group-addon {
+/*.input-group-addon {
   padding: 0.5rem 0.75rem;
   margin-bottom: 0;
   font-size: 1rem;
@@ -3552,7 +3552,7 @@ tbody.collapse.in {
   background-color: #eceeef;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 0.25rem;
-}
+}*/
 
 .input-group-addon.form-control-sm,
 .input-group-sm > .input-group-addon,
