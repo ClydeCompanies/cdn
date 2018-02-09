@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Navbar</a>
+
+  <button class="navbar-toggler" type="button" (click)="collapse=!collapse">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="navbar-collapse" (click)="collapse=true" [hidden]="collapse">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link btn disabled" href="#" disabled>Disabled</a>
+      </li>
+    </ul>
+    <!--<form class="form-inline my-2 my-lg-0">-->
+      <!--<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
+      <!--<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+    <!--</form>-->
+    <ul class="navbar-nav mt-2 mt-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" href="#" (click)="modal1.show()">Log In</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<app-login #modal1></app-login>
+<router-outlet></router-outlet>
