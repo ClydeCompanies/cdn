@@ -2087,13 +2087,11 @@
                                     var n = new FileReader;
                                     return n.onloadend = function() {
                                         var t = d ? n.result : n.result.replace(/^data:[^;]*;/, "data:attachment/file;");
-                                        alert(t);
                                         e.open(t, "_blank") || (e.location.href = t), t = void 0, M.readyState = M.DONE, f()
                                     }, n.readAsDataURL(t), void(M.readyState = M.INIT)
                                 }
                                 if (c || (c = a().createObjectURL(t)), L) e.location.href = c;
                                 else {
-                                	alert(c);
                                     e.open(c, "_blank") || (e.location.href = c)
                                 }
                                 M.readyState = M.DONE, f(), o(c)
@@ -10418,10 +10416,13 @@
             }, {
                 key: "dlIcal",
                 value: function() {
+                alert("Here 1");
                     var e = d.default.getIcsFileName(this.title),
                         t = this.calendarUrl.icalendar,
                         a = d.default.getIcsBlob(t);
+                alert("Here 2");
                     this.FileSaver.saveAs(a, e)
+                    alert("Here 3");
                 }
             }, {
                 key: "toggleMenu",
