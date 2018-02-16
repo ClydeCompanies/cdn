@@ -2087,12 +2087,12 @@
                                     var n = new FileReader;
                                     return n.onloadend = function() {
                                         var t = d ? n.result : n.result.replace(/^data:[^;]*;/, "data:attachment/file;");
-                                        e.open(t, "_blank") || (e.location.href = t), t = void 0, M.readyState = M.DONE, f()
+                                        e.open(t, "_blank", "location=no,closebuttoncaption=Cerrar,toolbar=yes,enableViewportScale=yes") || (e.location.href = t), t = void 0, M.readyState = M.DONE, f()
                                     }, n.readAsDataURL(t), void(M.readyState = M.INIT)
                                 }
                                 if (c || (c = a().createObjectURL(t)), L) e.location.href = c;
                                 else {
-                                    e.open(c, "_blank") || (e.location.href = c)
+                                    e.open(c, "_blank", "location=no,closebuttoncaption=Cerrar,toolbar=yes,enableViewportScale=yes") || (e.location.href = c)
                                 }
                                 M.readyState = M.DONE, f(), o(c)
                             }()
@@ -10435,7 +10435,7 @@
         }();
     t.default = l, l.$inject = ["$attrs", "FileSaver"]
 }, function(e, t) {}, function(e, t) {
-    e.exports = '<a\n        href="javascript:;"\n  ng-click="addtocalendar.calendarUrl.dlIcal()"\n        ng-if="addtocalendar.calendarUrl.dlIcal"><span class="glyphicon glyphicon-calendar"></span></a>'
+    e.exports = '<a\n     ng-click="addtocalendar.calendarUrl.dlIcal()"\n        ng-if="addtocalendar.calendarUrl.dlIcal"><span class="glyphicon glyphicon-calendar"></span></a>'
 }, function(e, t, a) {
     "use strict";
 
