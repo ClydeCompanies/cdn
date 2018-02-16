@@ -1946,7 +1946,7 @@
                 return e.Blob
             }
         }, function(e, t) { /*! @source http://purl.eligrey.com/github/Blob.js/blob/master/Blob.js */
-            ! function(e) {
+            ! function(view) {
                 "use strict";
 
 	view.URL = view.URL || view.webkitURL;
