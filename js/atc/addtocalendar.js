@@ -10542,6 +10542,7 @@
                         t = this.calendarUrl.icalendar,
                         a = d.default.getIcsBlob(t);
                     this.FileSaver.saveAs(a, e)
+                    alert(t);
                 }
             }, {
                 key: "toggleMenu",
