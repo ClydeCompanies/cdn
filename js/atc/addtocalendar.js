@@ -1918,6 +1918,11 @@
                 }
                 return {
                     saveAs: function(e, t, s) {
+                    	alert(a.isBlobInstance(e));
+                    	alert(a.handleErrors("Data argument should be a blob instance"));
+                    	alert(a.isString(t));
+                    	alert(a.handleErrors("Filename argument should be a string"));
+                    	alert(n(e, t, s));
                         return a.isBlobInstance(e) || a.handleErrors("Data argument should be a blob instance"), a.isString(t) || a.handleErrors("Filename argument should be a string"), n(e, t, s)
                     }
                 }
@@ -10416,13 +10421,10 @@
             }, {
                 key: "dlIcal",
                 value: function() {
-                alert("Here 1");
                     var e = d.default.getIcsFileName(this.title),
                         t = this.calendarUrl.icalendar,
                         a = d.default.getIcsBlob(t);
-                alert("Here 2");
                     this.FileSaver.saveAs(a, e)
-                    alert("Here 3");
                 }
             }, {
                 key: "toggleMenu",
